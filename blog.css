@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Michroma , sans-serif;
+}
+body{
+    background-color: black;
+}
+#button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+}
+#button:hover{
+    background-color: green;
+}
+.heading{
+    font-size: 50px;
+    color: rgb(7, 198, 250);
+    margin-left: 70px;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 15px rgb(7, 198, 250);
+}
+.heading:hover{
+    text-shadow: 0 0 20px rgb(7, 198, 250);
+}
