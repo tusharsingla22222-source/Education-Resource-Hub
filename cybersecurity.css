@@ -7,18 +7,16 @@
 body{
     background-color: black;
 }
-.btn{
+button{
     height: 50px;
-    width: 100px;
-    color: white;
-    background-color: blue;
-    border-radius: 10px ;
+    width: 50px;
+    border-radius: 50%;
     border: none;
+    background-color: blue;
+    color: white;
     cursor: pointer;
-    letter-spacing: 4px ;
-    font-weight: 600;
-    font-size: 17px;
+    position: fixed;
 }
-.btn:hover{
+button:hover{
     background-color: green;
 }
