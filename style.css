@@ -5,19 +5,29 @@
     font-family: Michroma , sans-serif;
 }
 body{
-    height: 1500px;
+    /* height: 1500px;
     background-image: url("images/background.png");
     background-size: cover; 
     background-repeat: no-repeat;
-    mask-image:linear-gradient(to bottom, rgba(0 , 0 , 0 , 1) , rgba(0 , 0 , 0 , 0)); ;
+    mask-image:linear-gradient(to bottom, rgba(0 , 0 , 0 , 1) , rgba(0 , 0 , 0 , 0)); ; */
+    background-color: black;
 }
+
 .navbar{
     height: 100px;
-    width: 1515px;
-    border: 1px solid transparent;
+    width: 1510px;
+    border: 3px solid transparent;  
     display: flex;
     justify-content: space-evenly;
     /* box-shadow: 0px 0px 10px  #38bdf8; */
+}
+#edu{
+    font-size: 30px;
+    color: rgb(7, 134, 238);
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+    font-weight: 700;
 }
 .navbar_logo{
     height: 70px;
@@ -85,8 +95,175 @@ body{
 #heading{
     color: white;
 }
-
+.navbar ul li#list4{
+    height: 50px;
+    width: 140px;
+    padding:13px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #08e3a1;
+    box-shadow: 0 0 15px #08e3a1;
+    letter-spacing: 3px;
+}
+.navbar ul li#list4:hover{
+    box-shadow: 0 0 20px #08e3a1;
+}
 
 
 /* MAIN */ 
 
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #0f0f1b; 
+}
+
+.hero-section h1 {
+    font-size: 3em; 
+    text-shadow: 0 0 10px #ff66b2;
+    margin-bottom: 15px;
+    color: #ff66b2;
+    font-weight: 700;
+    word-spacing: 10px;
+}
+.hero-section h1:hover{
+    text-shadow: 0 0 20px #ff66b2;
+}
+
+.hero-section .sub-headline {
+    font-size: 1.5em;
+    color: #8affff; 
+    text-shadow: 0 0 8px #8affff; 
+    margin-bottom: 30px;
+    word-spacing: 5px;
+}
+.hero-section .sub-headline:hover{
+    text-shadow: 0 0 16px #8affff;
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    color: #c0c0c0;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.buttons{
+    position: absolute;
+    left: 200px;
+}
+.btn{
+    height: 50px;
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    font-weight: 700;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+.one{
+    background-color: #ff66b2;
+    color: #1a1a2e;
+    box-shadow: 0 0 10px #ff66b2;
+}
+.one:hover{
+    background-color: #ff8cd0;
+    box-shadow: 0 0 20px #ff66b2;
+}
+.two{
+    background-color: #8affff;
+    color: #1a1a2e;
+    box-shadow: 0 0 10px #8affff;
+}
+.two:hover{
+    box-shadow: 0 0 20px #8affff;
+    background-color: #b0ffff;
+}
+.three{
+    background-color: #ff66b2;
+    color: #1a1a2e;
+    box-shadow: 0 0 10px #ff66b2;
+}
+.three:hover{
+    background-color: #ff8cd0;
+    box-shadow: 0 0 20px #ff66b2;
+}
+.four{
+    background-color: transparent;
+    border: 2px solid #e0e0e0;
+    color: #e0e0e0;
+}
+.four:hover{
+    background-color: rgba(224, 224, 224, 0.1);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+
+
+.section {
+    padding: 60px 20px;
+    background-color: #1a1a2e; /* Same as body background or slightly different */
+    text-align: center;
+    padding-top: 200px;
+}
+
+.section h2 {
+    font-size: 2.1em;
+    color: #ffeb3b; /* Yellowish glow for section heading */
+    text-shadow: 0 0 8px #ffeb3b;
+    margin-bottom: 50px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    background-color: #0f0f1b; /* Darker background for each feature box */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); /* Subtle cyan shadow */
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+}
+
+.feature-item .icon {
+    font-size: 2.1em;
+    color: #00bcd4; /* Bright cyan for icons */
+    margin-bottom: 15px;
+    display: block;
+}
+
+.feature-item h3 {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #b0b0b0;
+}
