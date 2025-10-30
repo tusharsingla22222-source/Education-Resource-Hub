@@ -39,25 +39,26 @@
       }
       .left {
         height: 850px;
-        width: 450px;
-        border: 2px solid red;
+        width: 400px;
+        border: 2px solid transparent;
         margin: 20px;
         overflow: auto;
         position: fixed;
         margin-top: 70px;
       }
       .right {
-        height: 4000px;
-        width: 1000px;
+        height: 3000px;
+        width: 1800px;
         margin-top: 20px;
-        border: 2px solid red;
-        margin-left: 500px;
+        border: 2px solid rgb(80, 78, 78);
+        border-radius: 20px;
+        margin-left: 450px;
         margin-top: 70px;
       }
       .card {
         height: 50px;
         width: 100%;
-        border: 2px solid white;
+        border: 2px solid rgb(85, 84, 84);
         margin-top: 10px;
         border-radius: 10px;
         cursor: pointer;
@@ -65,7 +66,6 @@
       .boiler-plate {
         color: white;
         padding: 10px;
-        padding-left: 100px;
         font-weight: 700;
         text-decoration: none;
         font-size: 17px;
@@ -74,7 +74,6 @@
       .about {
         color: white;
         padding: 10px;
-        padding-left: 180px;
         font-weight: 700;
         text-decoration: none;
         font-size: 17px;
@@ -83,15 +82,16 @@
         color: white;
         text-decoration: none;
         padding: 10px;
-        padding-left: 130px;
+        font-size: 17px;
         letter-spacing: 2px;
         background-color: rgb(7, 134, 238);
+        box-shadow: 0 0 15px rgb(7, 134, 238);
       }
       #heading{
         color: rgb(7, 134, 238);
         text-shadow: 0 0 15px rgb(7, 134, 238);
         padding:10px;
-        padding-left: 370px;
+        padding-left: 330px;
         text-decoration: underline;
       }
       #heading:hover{
@@ -109,6 +109,95 @@
         box-shadow: 0 0 15px rgb(7, 134, 238);
         cursor: pointer;
       }
+      #button:hover{
+        box-shadow: 0 0 20px rgb(7, 134, 238);
+      }
+      #para{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+      table{
+        border: 1px solid white;
+        border-collapse: collapse;
+        width: 90%;
+        margin-left: 50px;
+        border-radius: 10px;
+
+      }
+      tr , td , th{
+        border: 1px solid white;
+        padding: 10px;
+        color: white;
+        text-align: center;
+
+      }
+      th{
+        font-weight: 700;
+        color: white;
+        background-color: rgb(7, 134, 238);
+      }
+      h2:hover{
+        text-decoration: none;
+      }
+      .example{
+        height: 550px;
+        width: 720px;
+        border-radius: 20px;
+        background-image: url("images/code-elements.png");
+        background-size: cover;
+        margin-left: 40px;
+      }
+      .example-code{
+        height: 340px;
+        width: 600px;
+        border-radius: 20px;
+        background-image: url("images/code-elements-example.png");
+        background-size: cover;
+        margin-left: 20px;
+      }
+      .example-body{
+        height: 200px;
+        width: 660px;
+        border-radius: 20px;
+        margin-left: 20px;
+        background-image: url("images/code-example-body.png");
+        background-size: cover;
+      }
+      .example-h1{
+        height: 150px;
+        width: 610px;
+        border-radius: 20px;
+        margin-left: 20px;
+        background-image: url("images/code-example-h1.png");
+        background-size: cover;
+      }
+      .example-para{
+        height: 150px;
+        width: 610px;
+        background-image: url("images/code-example-para.png");
+        background-size: cover;
+        border-radius: 20px;
+        margin-left: 20px;
+      }
+      .attribute{
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .heading{
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px ;
+      }
+      .para{
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px ;
+      }
     </style>
 </head>
 <body>
@@ -118,9 +207,9 @@
         <a href="card1.html"><div class="card about">HTML</div></a>
         <a href="card2.html"><div class="card boiler-plate">HTML Boiler-Plate</div></a>
         <a href="card3.html"><div class="card tags">HTML Elements</div></a>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <a href="card4.html"><div class="card attribute">HTML Attributes</div></a>
+        <a href="card5.html"><div class="card heading">HTML Headings</div></a>
+        <a href="card6.html"><div class="card para">HTML Paragraphs</div></a>
         <div class="card"></div>
         <div class="card"></div>
         <div class="card"></div>
@@ -136,8 +225,69 @@
         <div class="card"></div>
       </div>
       <div class="right">
-        <h1 id="heading">HTML Tags</h1>
-        <a href="card2.html"><button id="button">Previous</button></a>
+        <h1 id="heading">HTML Elements</h1>
+        <div class="buttons">
+            <a href="card2.html"><button id="button">Previous</button></a>
+            <a href="card4.html"><button id="button" style="margin-left: 670px;">Next</button></a>
+            <br>
+            <hr>
+            <br>
+            <p id="para">An HTML element is defined by a start tag, some content, and an end tag.</p>
+            <br>
+            <hr>
+            <p style="color: white; font-size: 17px;margin: 20px; letter-spacing: 3px;color: rgb(225 , 223 , 223);">The HTML element is everything from the start tag to the end tag:</p>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Start Tag</th>
+                        <th>Element Content</th>
+                        <th>End Tag</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="color: red;">&lt;h1&gt;</td>
+                        <td>My first heading</td>
+                        <td style="color: red;">&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td style="color: red;">&lt;p&gt;</td>
+                        <td>My first paragraph</td>
+                        <td style="color: red;">&lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td style="color: red;">&lt;br&gt;</td>
+                        <td><i>none</i></td>
+                        <td><i>none</i></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note" style="color: white;background-color: red; margin-top: 20px; text-align: center; letter-spacing: 1px; word-spacing: 5px; padding: 20px;"><b>Note: </b>  Some HTML elements have no content (like the &lt;br&gt; element). These elements are called empty elements. Empty elements do not have an end tag!</div>
+            <br>
+            <hr>
+            <h2 style="color:white; padding: 20px; text-decoration: underline;">Nested HTML Elements</h2>
+            <br>
+            <p id="para2" style="color: rgb(225 , 223 , 223); margin: 20px;">HTML elements can be nested (this means that elements can contain other elements).</p>
+            <p id="para2" style="color: rgb(225 , 223 , 223); margin: 20px;">All HTML documents consist of nested HTML elements.</p>
+            <div class="example"></div>
+            <br>
+            <p id="para" style="text-align: left; margin: 20px; text-decoration: underline; color:yellow; font-weight: 700;">Example Explained</p>
+            <p style="color: rgb(225 , 223 , 223); margin: 20px; letter-spacing: 2px;margin-left: 40px;">The &lt;html&gt; element is the root element and it defines the whole HTML document.</p>
+            <p style="color: rgb(225 , 223 , 223); margin: 20px; letter-spacing: 2px;margin-left: 40px;">It has a start tag &lt;html&gt; and an end tag &lt;/html&gt;.</p>
+            <div class="example-code"></div>
+            <p style="color: rgb(225 , 223 , 223); margin: 20px; letter-spacing: 2px;margin-left: 40px;">The &lt;body&gt; element defines the document's body.</p>
+            <p style="color: rgb(225 , 223 , 223); margin: 20px; letter-spacing: 2px;margin-left: 40px;">It has a start tag &lt;body&gt; and an end tag &lt;/body&gt;.</p>
+            <p style="color: rgb(225 , 223 , 223); margin: 20px; letter-spacing: 2px;margin-left: 40px;">Then, inside the &lt;body&gt; element there are two other elements: &lt;h1&gt; and &lt;p&gt; and &lt;/p&gt;. </p>
+            <div class="example-body"></div>
+            <p style="color: rgb(225 , 223 , 223); margin: 20px; letter-spacing: 2px;margin-left: 40px;">The &lt;h1&gt; element defines a heading.</p>
+            <p style="color: rgb(225 , 223 , 223); margin: 20px; letter-spacing: 2px;margin-left: 40px;">It has a start tag &lt;h1&gt; and an end tag &lt;/h1&gt;.</p>
+            <div class="example-h1"></div>
+            <p style="color: rgb(225 , 223 , 223); margin: 20px; letter-spacing: 2px;margin-left: 40px;">The &lt;p&gt; element defines a paragraph.</p>
+            <p style="color: rgb(225 , 223 , 223); margin: 20px; letter-spacing: 2px;margin-left: 40px;">It has a start tag &lt;p&gt; and an end tag &lt;/p&gt;.</p>
+            <p style="color: rgb(225 , 223 , 223); margin: 20px; letter-spacing: 2px;margin-left: 40px;"></p>
+            <div class="example-para"></div>
+        </div>
       </div>
     </main>
 </body>

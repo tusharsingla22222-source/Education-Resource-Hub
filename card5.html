@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Headings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Michroma&family=Pompiere&display=swap"
+      rel=
+      "stylesheet"
+    />
+    <style>
+        *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Michroma, sans-serif;
+      }
+      body {
+        background-color: black;
+      }
+      #btn {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+      }
+      #btn:hover {
+        background-color: green;
+      }
+      main {
+        display: flex;
+      }
+      .left {
+        height: 850px;
+        width: 400px;
+        border: 2px solid transparent;
+        margin: 20px;
+        overflow: auto;
+        position: fixed;
+        margin-top: 70px;
+      }
+      .right {
+        height: 2000px;
+        width: 1800px;
+        margin-top: 20px;
+        border: 2px solid rgb(80, 78, 78);
+        border-radius: 20px;
+        margin-left: 450px;
+        margin-top: 70px;
+      }
+      .card {
+        height: 50px;
+        width: 100%;
+        border: 2px solid rgb(85, 84, 84);
+        margin-top: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .boiler-plate {
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .about {
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .tags{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      #button{
+        height: 50px;
+        width: 150px;
+        color: white;
+        font-size: 20px;
+        background-color:rgb(7, 134, 238);
+        border: none;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgb(7, 134, 238);
+        cursor: pointer;
+      }
+      #button:hover{
+        box-shadow: 0 0 20px rgb(7, 134, 238);
+      }
+      .attribute{
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .heading{
+        padding: 10px;
+        color: white;
+        font-size: 17px;
+        letter-spacing: 2px;
+        background-color: rgb(7, 134, 238);
+        box-shadow: 0 0 15px rgb(7, 134, 238);
+      }
+      #heading{
+        color: rgb(7, 134, 238);
+        text-shadow: 0 0 15px rgb(7, 134, 238);
+        padding: 20px;
+        margin-left: 330px;
+        text-decoration: underline;
+      }
+      #para{
+        color: rgb(225 , 223 , 223);
+        font-size: 17px;
+        margin: 30px;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+      }
+      .heading-image{
+        height: 1100px;
+        width: 800px;
+        background-image: url("images/code-headings-photo.png");
+        background-size: cover;
+        margin: auto;
+        border-radius: 20px;
+      }
+      .note{
+        color: white;
+        background-color: red;
+        padding: 10px;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+      }
+      .para{
+        padding: 10px;
+        color: white;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+    </style>
+</head>
+<body>
+    <main>
+      <div class="left">
+        <a href="card1.html"><div class="card about">HTML</div></a>
+        <a href="card2.html"><div class="card boiler-plate">HTML Boiler-Plate</div></a>
+        <a href="card3.html"><div class="card tags">HTML Elements</div></a>
+        <a href="card4.html"><div class="card attribute">HTML Attributes</div></a>
+        <a href="card5.html"><div class="card heading">HTML Headings</div></a>
+        <a href="card6.html"><div class="card para">HTML Paragraphs</div></a>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+      <div class="right">
+        <h1 id="heading">HTML Headings</h1>
+        <div class="buttons">
+            <a href="card4.html"><button id="button">Previous</button></a>
+            <a href="card6.html"><button id="button" style="margin-left: 670px;">Next</button></a>
+        <p id="para">HTML headings are titles or subtitles that you want to display on a webpage.</p>
+        <div class="heading-image"></div>
+        <p id="para">HTML headings are defined with the <span style="color: red;">&lt;h1&gt;</span> to <span style="color: red;">&lt;h6&gt;</span> tags.</p>
+        <p id="para"><span style="color: red;">&lt;h1&gt;</span> defines the most important heading. <span style="color: red;">&lt;h6&gt;</span> defines the least important heading.</p>
+        <div class="note">Note: Browsers automatically add some white space (a margin) before and after a heading.</div>
+        <h2 id="hding"></h2>
+        <p id="para"><span style="color: red;">&lt;h1&gt;</span>headings should be used for main headings, followed by <span style="color: red;">&lt;h2&gt;</span> headings, then the less important <span style="color: red;">&lt;h3&gt;</span>, and so on.</p>
+        <div class="note">Note: Use HTML headings for headings only. Don't use headings to make text BIG or bold.</div>
+      </main>
+    
+</body>
+</html>

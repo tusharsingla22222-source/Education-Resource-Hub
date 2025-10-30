@@ -38,7 +38,7 @@
       }
       .left {
         height: 850px;
-        width: 450px;
+        width: 400px;
         border: 2px solid red;
         margin: 20px;
         overflow: auto;
@@ -47,10 +47,11 @@
       }
       .right {
         height: 4000px;
-        width: 1000px;
+        width: 1800px;
         margin-top: 20px;
-        border: 2px solid red;
-        margin-left: 500px;
+        border:  2px solid rgb(80, 78, 78);
+        border-radius: 20px ;
+        margin-left: 450px;
         margin-top: 70px;
       }
       .card {
@@ -63,8 +64,7 @@
       }
       .boiler-plate {
         color: white;
-        padding: 10px;
-        padding-left: 100px;
+        padding: 10px;        
         font-weight: 700;
         text-decoration: none;
         font-size: 17px;
@@ -75,7 +75,6 @@
       .about {
         color: white;
         padding: 10px;
-        padding-left: 180px;
         font-weight: 700;
         text-decoration: none;
         font-size: 17px;
@@ -85,7 +84,7 @@
         text-shadow: 0 0 15px rgb(7, 134, 238);
         word-spacing: 5px;
         letter-spacing: 2px;
-        padding: 30px;
+        padding: 10px;
         padding-left: 270px;
         /* text-decoration:overline; */
         text-decoration: underline;
@@ -101,13 +100,14 @@
         margin-left: 35px;
         background-image: url("images/card2-boiler-plate.png");
         border-radius: 30px;
+        font-size: 17px;
       }
       .tags{
         color: white;
         text-decoration: none;
         padding: 10px;
-        padding-left: 120px;
         letter-spacing: 2px;
+        font-size: 17px;
       }
       #para{
         color: rgb(225, 223, 223);
@@ -171,6 +171,24 @@
     #button:hover{
       box-shadow: 0 0 20px rgb(7, 134, 238);
     }
+    .attribute{
+      color: white;
+      font-size: 17px;
+      padding: 10px;
+      letter-spacing: 2px;
+    }
+    .heading{
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px ;
+      }
+      .para{
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px ;
+      }
     </style>
   </head>
   <body>
@@ -180,9 +198,9 @@
         <a href="card1.html"><div class="card about">HTML</div></a>
         <a href="card2.html"><div class="card boiler-plate">HTML Boiler-Plate</div></a>
         <a href="card3.html"><div class="card tags">HTML Elements</div></a>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <a href="card4.html"><div class="card attribute">HTML Attribute</div></a>
+        <a href="card5.html"><div class="card heading">HTML Headings</div></a>
+        <a href="card6.html"><div class="card para">HTML Paragraphs</div></a>
         <div class="card"></div>
         <div class="card"></div>
         <div class="card"></div>
@@ -199,7 +217,10 @@
       </div>
       <div class="right">
         <h1 id="heading">Boiler-Plate Code</h1>
-        <a href="card1.html"><button id="button">Previous</button></a>
+        <div class="buttons">
+           <a href="card1.html"><button id="button">Previous</button></a>
+           <a href="card3.html"><button id="button" style="margin-left: 670px;">Next</button></a>
+        </div>
         <p id="para">Boilerplate code in HTML refers to the standardized , essential structure and elements that are typically included at the beginning of every HTML document. This foundational code provides a consistent starting point for web projects, ensuring basic functionality and compatibility across different browsers.</p>
         <br>
         <p id="para">Here's an example of a basic HTML5 boilerplate:</p>
