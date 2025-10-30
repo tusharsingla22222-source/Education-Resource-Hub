@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Michroma&family=Pompiere&display=swap"
+      rel=
+      "stylesheet"
+    />
+    <style>
+        *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Michroma, sans-serif;
+      }
+      body {
+        background-color: black;
+      }
+      #btn {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+      }
+      #btn:hover {
+        background-color: green;
+      }
+      main {
+        display: flex;
+      }
+      .left {
+        height: 850px;
+        width: 450px;
+        border: 2px solid red;
+        margin: 20px;
+        overflow: auto;
+        position: fixed;
+        margin-top: 70px;
+      }
+      .right {
+        height: 4000px;
+        width: 1000px;
+        margin-top: 20px;
+        border: 2px solid red;
+        margin-left: 500px;
+        margin-top: 70px;
+      }
+      .card {
+        height: 50px;
+        width: 100%;
+        border: 2px solid white;
+        margin-top: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .boiler-plate {
+        color: white;
+        padding: 10px;
+        padding-left: 100px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .about {
+        color: white;
+        padding: 10px;
+        padding-left: 180px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .tags{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        padding-left: 130px;
+        letter-spacing: 2px;
+        background-color: rgb(7, 134, 238);
+      }
+      #heading{
+        color: rgb(7, 134, 238);
+        text-shadow: 0 0 15px rgb(7, 134, 238);
+        padding:10px;
+        padding-left: 370px;
+        text-decoration: underline;
+      }
+      #heading:hover{
+        text-shadow: 0 0 20px rgb(7, 134, 238);
+      }
+      #button{
+        height: 50px;
+        width: 150px;
+        color: white;
+        font-size: 20px;
+        background-color:rgb(7, 134, 238);
+        border: none;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgb(7, 134, 238);
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <a href="courses.html"><button id="btn">⬅</button></a>
+    <main>
+      <div class="left">
+        <a href="card1.html"><div class="card about">HTML</div></a>
+        <a href="card2.html"><div class="card boiler-plate">HTML Boiler-Plate</div></a>
+        <a href="card3.html"><div class="card tags">HTML Elements</div></a>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+      <div class="right">
+        <h1 id="heading">HTML Tags</h1>
+        <a href="card2.html"><button id="button">Previous</button></a>
+      </div>
+    </main>
+</body>
+</html>

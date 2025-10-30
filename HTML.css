@@ -12,181 +12,60 @@ body{
     height: 1500px;
     /* mask-image:linear-gradient(to bottom, rgba(0 , 0 , 0 , 1) , rgba(0 , 0 , 0 , 0)); */
 }
-#paras{
-    color: white;
-    margin-left: 40px;
-    font-size: 17px;
-    word-spacing: 10px;
-    letter-spacing: 3px;
-}
 #btn{
     height: 50px;
     width: 50px;
-    color: white;
     background-color: blue;
-    border-radius: 50% ;
+    border-radius: 50%;
     border: none;
+    color: white;
     cursor: pointer;
-    letter-spacing: 4px ;
-    font-weight: 600;
-    font-size: 20px; 
-    margin: 10px;
-    text-align: center;
     position: fixed;
-    z-index: 1;
 }
 #btn:hover{
     background-color: green;
 }
-.notes{
+main{
     display: flex;
-    justify-content: space-evenly;
+}
+.left{
+    height: 850px;
+    width: 450px;
+    border: 2px solid red;
+    margin: 20px;
     overflow: auto;
-    margin-left: 30px;
-    margin-right: 30px;
+    position: fixed;
+    margin-top: 70px;
 }
-.notes::-webkit-scrollbar{
-    display: none;
+.right{
+    height: 1000px;
+    width: 1000px;
+    margin-top: 20px;
+    border: 2px solid red;
+    margin-left: 500px;
+    margin-top: 70px;
+
 }
-.box{
-    flex: 0 0 28em;
-    margin-right: 50px;
-    height: 520px;
-    width: 500px;
-    border: 1px solid rgba(111, 110, 110, 0.375);
-    background: transparent;
-    backdrop-filter: blur(5px);
-}
-#heading{
-    margin: 35px;
-    font-size: 40px;
-    letter-spacing: 5px;
-    color: rgb(243, 169, 8);
-    text-shadow: 0 0 15px rgb(243, 169, 8);
-    margin-left: 70px;
-}
-#heading:hover{
-    text-shadow: 0 0 20px rgb(243, 169, 8)  ;
-}
-@keyframes spin {
-    from{translate : 0}
-    to{translate : -100%}
-}
-.btn{
+.card{
     height: 50px;
     width: 100%;
-    /* background-color: rgb(243, 169, 8); */
+    border: 2px solid white;
+    margin-top: 10px;
     border-radius: 10px;
-    border: none;
+    padding: 10px;
+}
+.about{
+    color: white;
+    padding-left: 180px;
+    font-weight: 700;
+    text-decoration: none;
     font-size: 17px;
-    letter-spacing: 1px ;
+}
+.boiler-plate{
     color: white;
-    box-shadow: 0 0 15px rgb(243, 169, 8);
-    margin-top: 12px;
-    cursor: pointer;
-    background: linear-gradient(to right, #ff758c, #ff7eb3, #8e54e9, #4776e6, #43cea2);
-    box-shadow: 0 0 15px linear-gradient(to right, #ff758c, #ff7eb3, #8e54e9, #4776e6, #43cea2);
-}
-.btn:hover{
-    box-shadow: 0 0 20px linear-gradient(to right, #ff758c, #ff7eb3, #8e54e9, #4776e6, #43cea2);
-}
-.one{
-    height: 440px;
-    width: 100%;
-    background-image: url("images/html-notes-seven.png");
-    background-size: cover;
-}
-.two{
-    height: 440px;
-    width: 100%;
-    background-image: url("images/html-notes-six.png");
-    background-size: cover;
-}
-.three{
-    height: 440px;
-    width: 100%;
-    background-image: url("images/html-notes-three.png");
-    background-size: cover;
-}
-.four{
-    height: 440px;
-    width: 100%;
-    background-image: url("images/html-notes-four.png");
-    background-size: cover;
-}
-.five{
-    height: 440px;
-    width: 100%;
-    background-image: url("images/html-notes-five.png");
-    background-size: cover;
-}
-.six{
-    height: 440px;
-    width: 100%;
-    background-image: url("images/html-notes-six.png");
-    background-size: cover;
-}
-
-.video{
-    display: flex;
-    justify-content: space-evenly;
-    overflow: auto;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-.video::-webkit-scrollbar{
-    display: none;
-}
-.boxx{
-    flex: 0 0 28em;
-    margin-right: 50px;
-    height: 550px;
-    width: 500px;
-    border: 1px solid rgba(111, 110, 110, 0.375);
-    background: transparent;
-    backdrop-filter: blur(5px);
-}
-.boxx::-webkit-scrollbar{
-    display: none;
-}
-.ones{
-    height: 440px;
-    width: 100%;
-    background-image: url("video/html-video-one.png");
-    background-size: cover;
-}
-.twos{
-    height: 440px;
-    width: 100%;
-    background-image: url("video/html-video-two.png");
-    background-size: cover;
-}
-.threes{
-    height: 440px;
-    width: 100%;
-    background-image: url("video/html-video-three.png");
-    background-size: cover;
-}
-.fours{
-    height: 440px;
-    width: 100%;
-    background-image: url("video/html-video-four.png");
-    background-size: cover;
-}
-.fives{
-    height: 440px;
-    width: 100%;
-    background-image: url("video/html-video-five.png");
-    background-size: cover;
-}
-.sixes{
-    height: 440px;
-    width: 100%;
-    background-image: url("video/html-video-six.png");
-    background-size: cover;
-}
-#para{
-    color: white;
-    margin: 15px;
-    margin-left: 120px;
+    padding-left: 100px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 2px;
 }
