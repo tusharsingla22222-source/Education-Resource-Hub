@@ -100,7 +100,7 @@ main{
     width: 485px;
     background-image: url("images/cyber_security.png");
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 90px;
 }
 .box button{
     height: 50px;
@@ -126,14 +126,14 @@ main{
 .html{
     height: 500px;
     width: 485px;
-    background-image: url("images/html-course.png");
+    background-image: url("images/html-front-page.png");
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 90px;
 }
 .css{
     height: 500px;
     width: 485px;
     background-image: url("images/css-poster.png");
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 90px;
 }

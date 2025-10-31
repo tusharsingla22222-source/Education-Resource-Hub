@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Michroma&family=Pompiere&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Michroma, sans-serif;
+      }
+      body {
+        background-color: black;
+      }
+      #btn {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+      }
+      #btn:hover {
+        background-color: green;
+      }
+      main {
+        display: flex;
+      }
+      .left {
+        height: 850px;
+        width: 400px;
+        border: 2px solid transparent;
+        margin: 20px;
+        overflow: auto;
+        position: fixed;
+        margin-top: 70px;
+      }
+      .right {
+        height: 3500px;
+        width: 1800px;
+        margin-top: 20px;
+        border: 2px solid rgb(80, 78, 78);
+        border-radius: 20px;
+        margin-left: 450px;
+        margin-top: 70px;
+      }
+      .card {
+        height: 50px;
+        width: 100%;
+        border: 2px solid rgb(85, 84, 84);
+        margin-top: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .boiler-plate {
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .about {
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .tags {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      #heading {
+        color: rgb(7, 134, 238);
+        text-shadow: 0 0 15px rgb(7, 134, 238);
+        padding: 10px;
+        padding-left: 330px;
+        text-decoration: underline;
+      }
+      #heading:hover {
+        text-shadow: 0 0 20px rgb(7, 134, 238);
+      }
+      #button {
+        height: 50px;
+        width: 150px;
+        color: white;
+        font-size: 20px;
+        background-color: rgb(7, 134, 238);
+        border: none;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgb(7, 134, 238);
+        cursor: pointer;
+      }
+      #button:hover {
+        box-shadow: 0 0 20px rgb(7, 134, 238);
+      }
+      #para {
+        color: rgb(225, 223, 223);
+        font-size: 17px;
+        margin: 40px;
+        letter-spacing: 2px;
+      }
+      .attribute {
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .heading {
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      #hding {
+        color: white;
+        margin: 30px;
+        letter-spacing: 2px;
+        text-decoration: underline;
+      }
+      .para {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .style {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .format{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .comment{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .color{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .link{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .image{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+        background-color: rgb(7, 134, 238);
+        box-shadow: 0 0 15px rgb(7, 134, 238);
+      }
+      .list{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .image-syntax{
+        height: 310px;
+        width: 1000px;
+        background-image: url("images/code-images.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      .syntax{
+        height: 180px;
+        width: 1000px;
+        background-image: url("images/code-src-syntax.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      .note{
+        color: white;
+        background-color: red;
+        padding: 20px;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+      }
+      .image-pic{
+        height: 150px;
+        width: 1000px;
+        background-image: url("images/code-imges-src.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      .width{
+        height: 170px;
+        width: 900px;
+        background-image: url("images/code-imges-src-tour.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      table{
+        border: 2px solid white;
+        border-collapse: collapse;
+        color: white;
+        width: 100%;
+      }
+      td , tr , th{
+        border: 2px solid white;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      th{
+        background-color: rgb(7, 134, 238);
+      }
+      </style>
+</head>
+<body>
+    <a href="courses.html"><button id="btn">⬅</button></a>
+    <main>
+      <div class="left">
+        <a href="card1.html"><div class="card about">HTML</div></a>
+        <a href="card2.html"><div class="card boiler-plate">HTML Boiler-Plate</div></a>
+        <a href="card3.html"><div class="card tags">HTML Elements</div></a>
+        <a href="card4.html"><div class="card attribute">HTML Attributes</div></a>
+        <a href="card5.html"><div class="card heading">HTML Headings</div></a>
+        <a href="card6.html"><div class="card para">HTML Paragraphs</div></a>
+        <a href="card7.html"><div class="card style">HTML Styles</div></a>
+        <a href="card8.html"><div class="card format">HTML Formatting</div></a>
+        <a href="card9.html"><div class="card comment">HTML Comments</div></a>
+        <a href="card10.html"><div class="card color">HTML Colors</div></a>
+        <a href="card11.html"><div class="card link">HTML Links</div></a>
+        <a href="card12.html"><div class="card image">HTML Images</div></a>
+        <a href="card13.html"><div class="card list">HTML Lists</div></a>
+        <a href="card14.html"><div class="card"></div></a>
+      </div>
+      <div class="right">
+        <h1 id="heading">HTML Text Formatting</h1>
+        <div class="buttons">
+            <a href="card11.html"><button id="button">Previous</button></a>
+            <a href="card13.html"><button id="button" style="margin-left: 670px;">Next</button></a>
+        </div>
+        <p id="para">Images can improve the design and the appearance of a web page.</p>
+        <div class="images">
+          <img src="images/image1.jpg" alt="Bugatti Tourbillion" height="250px" width="350px">
+          <img src="images/image3.jpg" alt="BMW M1000 RR" height="250px" width="350px">
+          <img src="images/image2.webp" alt="Aston Martin" height="250px" width="330px">
+        </div>
+        <div class="image-syntax"></div>
+        <br>
+        <h2 id="hding">HTML Images Syntax</h2>
+        <p id="para">
+          The HTML <span style="color: red;">&lt;img&gt;</span> tag is used to embed an image in a web page.
+          <br>
+          <br/>
+          Images are not technically inserted into a web page; images are linked to web pages. The <span style="color: red;">&lt;img&gt;</span> tag creates a holding space for the referenced image.
+          <br>
+          <br/>
+          The <span style="color: red;">&lt;img&gt;</span> tag is empty, it contains attributes only, and does not have a closing tag.
+          <br>
+          <br/>
+          The <span style="color: red;">&lt;img&gt;</span> tag has two required attributes: 
+        </p>
+        <p id="para" style="margin-left: 70px;">
+          1. src - Specifies the path to the image
+          <br>
+          2. alt - Specifies an alternate text for the image
+        </p>
+        <div class="syntax"></div>
+        <br>
+        <hr>
+        <h2 id="hding">The src Attribute</h2>
+        <p id="para">The required <span style="color: red;">src</span> attribute specifies the path (URL) to the image.</p>
+        <div class="note">Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.
+      </div>
+      <div class="image-pic"></div>
+      <div class="note">If a browser cannot find an image, it will display the value of the alt attribute:</div>
+      <br>
+      <hr>
+      <h2 id="hding">Image Size - Width and Height</h2>
+      <p id="para">You can use the <span style="color: red;">style</span> attribute to specify the width and height of an image.</p>
+      <div class="width"></div>
+      <p id="para">Alternatively, you can use the width and height attributes.</p>
+      <p id="para">The width and height attributes always define the width and height of the image in pixels.</p>
+      <div class="note">Note: Always specify the width and height of an image. If width and height are not specified, the web page might flicker while the image loads.</div>
+      <br>
+      <hr>
+      <h2 id="hding">Common Image Formats</h2>
+      <p id="para">Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera):</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Abbreviation</th>
+            <th>File Format</th>
+            <th>File Extension</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>APNG</td>
+            <td>Animated Portable Network Graphics</td>
+            <td>.apng</td>
+          </tr>
+          <tr>
+            <td>GIF</td>
+            <td>Graphics Interchange Format</td>
+            <td>.gif</td>
+          </tr>
+          <tr>
+            <td>ICO</td>
+            <td>Microsoft Icon</td>
+            <td>.ico, .cur</td>
+          </tr>
+          <tr>
+            <td>JPEG</td>
+            <td>Joint Photographic Expert Group image</td>
+            <td>.jpg, .jpeg, .jfif, .pjpeg, .pjp</td>
+          </tr>
+          <tr>
+            <td>PNG</td>
+            <td>Portable Network Graphics</td>
+            <td>.png</td>
+          </tr>
+          <tr>
+            <td>SVG</td>
+            <td>Scalable Vector Graphics</td>
+            <td>.svg</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    
+</body>
+</html>

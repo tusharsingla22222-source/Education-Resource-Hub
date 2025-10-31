@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Headings</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Michroma&family=Pompiere&display=swap"
-      rel=
-      "stylesheet"
+      rel="stylesheet"
     />
     <style>
-        *{
+      * {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
@@ -47,7 +46,7 @@
         margin-top: 70px;
       }
       .right {
-        height: 2000px;
+        height: 2500px;
         width: 1800px;
         margin-top: 20px;
         border: 2px solid rgb(80, 78, 78);
@@ -78,86 +77,80 @@
         text-decoration: none;
         font-size: 17px;
       }
-      .tags{
+      .tags {
         color: white;
         text-decoration: none;
         padding: 10px;
         font-size: 17px;
         letter-spacing: 2px;
       }
-      #button{
+      #heading {
+        color: rgb(7, 134, 238);
+        text-shadow: 0 0 15px rgb(7, 134, 238);
+        padding: 10px;
+        padding-left: 330px;
+        text-decoration: underline;
+      }
+      #heading:hover {
+        text-shadow: 0 0 20px rgb(7, 134, 238);
+      }
+      #button {
         height: 50px;
         width: 150px;
         color: white;
         font-size: 20px;
-        background-color:rgb(7, 134, 238);
+        background-color: rgb(7, 134, 238);
         border: none;
         margin: 20px;
         border-radius: 10px;
         box-shadow: 0 0 15px rgb(7, 134, 238);
         cursor: pointer;
       }
-      #button:hover{
+      #button:hover {
         box-shadow: 0 0 20px rgb(7, 134, 238);
       }
-      .attribute{
+      #para {
+        color: rgb(225, 223, 223);
+        font-size: 17px;
+        margin: 40px;
+        letter-spacing: 2px;
+      }
+      .attribute {
         color: white;
         padding: 10px;
         font-size: 17px;
         letter-spacing: 2px;
       }
-      .heading{
-        padding: 10px;
+      .heading {
         color: white;
+        padding: 10px;
         font-size: 17px;
         letter-spacing: 2px;
-        background-color: rgb(7, 134, 238);
-        box-shadow: 0 0 15px rgb(7, 134, 238);
       }
-      #heading{
-        color: rgb(7, 134, 238);
-        text-shadow: 0 0 15px rgb(7, 134, 238);
-        padding: 20px;
-        margin-left: 330px;
+      #hding {
+        color: white;
+        margin: 30px;
+        letter-spacing: 2px;
         text-decoration: underline;
       }
-      #para{
-        color: rgb(225 , 223 , 223);
-        font-size: 17px;
-        margin: 30px;
-        word-spacing: 5px;
-        letter-spacing: 1px;
-      }
-      .heading-image{
-        height: 1100px;
-        width: 800px;
-        background-image: url("images/code-headings-photo.png");
-        background-size: cover;
-        margin: auto;
-        border-radius: 20px;
-      }
-      .note{
+      .para {
         color: white;
-        background-color: red;
+        text-decoration: none;
         padding: 10px;
-        letter-spacing: 2px;
-        word-spacing: 5px;
-      }
-      .para{
-        padding: 10px;
-        color: white;
         font-size: 17px;
         letter-spacing: 2px;
       }
-      .style{
-        padding: 10px;
+      .style {
         color: white;
+        text-decoration: none;
+        padding: 10px;
         font-size: 17px;
         letter-spacing: 2px;
       }
       .format{
-        padding: 10px;
         color: white;
+        text-decoration: none;
+        padding: 10px;
         font-size: 17px;
         letter-spacing: 2px;
       }
@@ -167,6 +160,8 @@
         padding: 10px;
         font-size: 17px;
         letter-spacing: 2px;
+        background-color: rgb(7, 134, 238);
+        box-shadow: 0 0 15px rgb(7, 134, 238);
       }
       .color{
         color: white;
@@ -196,9 +191,47 @@
         font-size: 17px;
         letter-spacing: 2px;
       }
-    </style>
+      .comments{
+        height: 135px;
+        width: 900px;
+        background-image: url("images/code-comment.png");
+        background-size: cover;
+        border-radius: 20px;
+        margin: 30px;
+      }
+      .note{
+        background-color: red;
+        padding: 10px;
+        color: white;
+      }
+      .add-comment{
+        height: 300px;
+        width: 950px;
+        background-image: url("images/code-comment-add.png");
+        background-size: cover;
+        border-radius: 20px;
+        margin: 30px;
+      }
+      .comment-add-one{
+        height: 310px;
+        width: 900px;
+        background-image: url("images/code-comment-add-one.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      .comment-add-two{
+        height: 320px;
+        width: 900px;
+        background-image: url("images/code-comment-add-two.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      </style>
 </head>
 <body>
+    <a href="courses.html"><button id="btn">⬅</button></a>
     <main>
       <div class="left">
         <a href="card1.html"><div class="card about">HTML</div></a>
@@ -217,19 +250,33 @@
         <a href="card14.html"><div class="card"></div></a>
       </div>
       <div class="right">
-        <h1 id="heading">HTML Headings</h1>
+        <h1 id="heading">HTML Comments</h1>
         <div class="buttons">
-            <a href="card4.html"><button id="button">Previous</button></a>
-            <a href="card6.html"><button id="button" style="margin-left: 670px;">Next</button></a>
-        <p id="para">HTML headings are titles or subtitles that you want to display on a webpage.</p>
-        <div class="heading-image"></div>
-        <p id="para">HTML headings are defined with the <span style="color: red;">&lt;h1&gt;</span> to <span style="color: red;">&lt;h6&gt;</span> tags.</p>
-        <p id="para"><span style="color: red;">&lt;h1&gt;</span> defines the most important heading. <span style="color: red;">&lt;h6&gt;</span> defines the least important heading.</p>
-        <div class="note">Note: Browsers automatically add some white space (a margin) before and after a heading.</div>
-        <h2 id="hding"></h2>
-        <p id="para"><span style="color: red;">&lt;h1&gt;</span>headings should be used for main headings, followed by <span style="color: red;">&lt;h2&gt;</span> headings, then the less important <span style="color: red;">&lt;h3&gt;</span>, and so on.</p>
-        <div class="note">Note: Use HTML headings for headings only. Don't use headings to make text BIG or bold.</div>
-      </main>
+            <a href="card8.html"><button id="button">Previous</button></a>
+            <a href="card10.html"><button id="button" style="margin-left: 670px;">Next</button></a>
+        </div>
+        <p id="para">HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+        <h2 id="hding">HTML Comment Tag</h2>
+        <div class="comments"></div>
+        <p id="para">Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+        <div class="note">Note: Comments are not displayed by the browser, but they can help document your HTML source code.</div>
+        <br>
+        <hr>
+        <h2 id="hding">Add Comments</h2>
+        <p id="para">With comments you can place notifications and reminders in your HTML code:</p>
+        <div class="add-comment"></div>
+        <br>
+        <hr>
+        <h2 id="hding">Hide Content</h2>
+        <p id="para">Comments can be used to hide content.
+          <br/>
+          This can be helpful if you hide content temporarily:
+        </p>
+        <div class="comment-add-one"></div>
+        <p id="para">You can hide more than one lines.</p>
+        <div class="comment-add-two"></div>
+        <p id="para">Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors.</p>
+    </main>
     
 </body>
 </html>

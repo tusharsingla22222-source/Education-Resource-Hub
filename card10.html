@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Michroma&family=Pompiere&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Michroma, sans-serif;
+      }
+      body {
+        background-color: black;
+      }
+      #btn {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+      }
+      #btn:hover {
+        background-color: green;
+      }
+      main {
+        display: flex;
+      }
+      .left {
+        height: 850px;
+        width: 400px;
+        border: 2px solid transparent;
+        margin: 20px;
+        overflow: auto;
+        position: fixed;
+        margin-top: 70px;
+      }
+      .right {
+        height: 4300px;
+        width: 1800px;
+        margin-top: 20px;
+        border: 2px solid rgb(80, 78, 78);
+        border-radius: 20px;
+        margin-left: 450px;
+        margin-top: 70px;
+      }
+      .card {
+        height: 50px;
+        width: 100%;
+        border: 2px solid rgb(85, 84, 84);
+        margin-top: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .boiler-plate {
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .about {
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .tags {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      #heading {
+        color: rgb(7, 134, 238);
+        text-shadow: 0 0 15px rgb(7, 134, 238);
+        padding: 10px;
+        padding-left: 330px;
+        text-decoration: underline;
+      }
+      #heading:hover {
+        text-shadow: 0 0 20px rgb(7, 134, 238);
+      }
+      #button {
+        height: 50px;
+        width: 150px;
+        color: white;
+        font-size: 20px;
+        background-color: rgb(7, 134, 238);
+        border: none;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgb(7, 134, 238);
+        cursor: pointer;
+      }
+      #button:hover {
+        box-shadow: 0 0 20px rgb(7, 134, 238);
+      }
+      #para {
+        color: rgb(225, 223, 223);
+        font-size: 17px;
+        margin: 40px;
+        letter-spacing: 2px;
+      }
+      .attribute {
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .heading {
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      #hding {
+        color: white;
+        margin: 30px;
+        letter-spacing: 2px;
+        text-decoration: underline;
+      }
+      .para {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .style {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .format{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .comment{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .color{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+        background-color: rgb(7, 134, 238);
+        box-shadow: 0 0 15px rgb(7, 134, 238);
+      }
+      .link{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .image{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .list{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .boxes{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+      }
+      .box{
+        height: 80px;
+        width: 220px;
+        border: 2px solid white;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        border: none;
+      }
+      .box p{
+        margin: auto;
+      }
+      .btn1{
+        padding: auto;
+        margin-top: 50px;
+        margin-left: 210px;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-size: 16px;
+        background: rgb(7, 134, 238);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        padding: 20px;
+        box-shadow: 0 0 20px rgb(7, 134, 238);
+        cursor: pointer;
+      }
+      .btn1:hover{
+        box-shadow: 0 0 30px rgb(7, 134, 238);
+      }
+      .hello{
+        color: white;
+        background-color: #1e90ff;
+        text-align: center;
+        padding: 10px;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+      }
+      .lorem{
+        color: white;
+        background-color: #FF6347;
+        padding: 20px;
+        margin-top: 30px;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+      }
+      .colors{
+        height: 220px;
+        width: 950px;
+        background-image: url("images/code-colors.png");
+        background-size: cover;
+        border-radius: 20px;
+        margin: 30px;
+      }
+      .border-color{
+        height: 350px;
+        width: 1000px;
+        background-image: url("images/code-border-color.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      .color-value{
+        color: white;
+        background-color: #FF6347;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 700;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+      }
+      .opacity{
+        height: 520px;
+        width: 1000px;
+        background-image: url("images/code-color-opacity.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      </style>
+</head>
+<body>
+    <a href="courses.html"><button id="btn">⬅</button></a>
+    <main>
+      <div class="left">
+        <a href="card1.html"><div class="card about">HTML</div></a>
+        <a href="card2.html"><div class="card boiler-plate">HTML Boiler-Plate</div></a>
+        <a href="card3.html"><div class="card tags">HTML Elements</div></a>
+        <a href="card4.html"><div class="card attribute">HTML Attributes</div></a>
+        <a href="card5.html"><div class="card heading">HTML Headings</div></a>
+        <a href="card6.html"><div class="card para">HTML Paragraphs</div></a>
+        <a href="card7.html"><div class="card style">HTML Styles</div></a>
+        <a href="card8.html"><div class="card format">HTML Formatting</div></a>
+        <a href="card9.html"><div class="card comment">HTML Comments</div></a>
+        <a href="card10.html"><div class="card color">HTML Colors</div></a>
+        <a href="card11.html"><div class="card link">HTML Links</div></a>
+        <a href="card12.html"><div class="card image">HTML Images</div></a>
+        <a href="card13.html"><div class="card list">HTML Lists</div></a>
+        <a href="card14.html"><div class="card"></div></a>
+      </div>
+      <div class="right">
+        <h1 id="heading">HTML Colors</h1>
+        <div class="buttons">
+            <a href="card9.html"><button id="button">Previous</button></a>
+            <a href="card11.html"><button id="button" style="margin-left: 670px;">Next</button></a>
+        </div>
+        <p id="para">HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</p>
+        <br>
+        <hr>
+        <h2 id="hding">Color Names</h2>
+        <p id="para">In HTML, a color can be specified by using a color name:</p>
+        <div class="boxes">
+          <div class="box" style="background-color: #FF6347;"><p>Tomato</p></div>
+          <div class="box" style="background-color: #ffa500;"><p>Orange</p></div>
+          <div class="box" style="background-color: #1e90ff;"><p>DodgerBlue</p></div>
+          <div class="box" style="background-color: #3cb371;"><p>MediumSeaGreen</p></div>
+        </div>
+        <div class="boxes">
+          <div class="box" style="background-color: #808080;"><p>Gray</p></div>
+          <div class="box" style="background-color: #6a5acd;"><p>SlateBlue</p></div>
+          <div class="box" style="background-color: #ee82ee;"><p>Violet</p></div>
+          <div class="box" style="background-color: #d3d3d3;"><p>LightGray</p></div>
+        </div>
+        <a href="https://coolors.co/"><button class="btn1">Click Here to explore a huge variety of colors</button></a>
+        <br>
+        <br>
+        <hr>
+        <h2 id="hding">Background Color</h2>
+        <p id="para">You can set the background color for HTML elements:</p>
+        <div class="hello">Hello World</div>
+        <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ad ea dolores! Eius quidem ea dignissimos tenetur, omnis assumenda maxime at saepe deserunt obcaecati veniam incidunt repellendus earum corrupti unde!</div>
+        <br>
+        <hr>
+        <h2 id="hding">Text Color</h2>
+        <p id="para">You can set the color of text:</p>
+        <p id="para" style="color: #FF6347;">Hello World</p>
+        <p id="para" style="color: #1e90ff;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo atque velit sequi adipisci! Temporibus, nesciunt error. Quidem ad adipisci dolorum.</p>
+        <p id="para" style="color: #3cb371;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quisquam?</p>
+        <div class="colors"></div>
+        <br>
+        <hr>
+        <h2 id="hding">Border Color</h2>
+        <p id="para">You can set the color of borders:</p>
+        <p id="para" style="border: 2px solid tomato;">Hello World</p>
+        <p id="para" style="border: 2px solid dodgerblue;">Hello World</p>
+        <p id="para" style="border: 2px solid violet;">Hello World</p>
+        <div class="border-color"></div>
+        <br>
+        <hr>
+        <h2 id="hding">Color Values</h2>
+        <p id="para">In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.</p>
+        <p id="para">The following three &lt;div&gt; elements have their background color set with RGB, HEX, and HSL values:</p>
+        <div class="color-value"><p>rgb(255 , 99 , 71)</p></div>
+        <div class="color-value"><p>#ff6347</p></div>
+        <div class="color-value"><p>hsl(9 , 100% , 64%)</p></div>
+        <p id="para">The following two &lt;div&gt; elements have their background color set with RGBA and HSLA values, which add an Alpha channel to the color (here we have 50% transparency):</p>
+        <div class="color-value" style="background-color: rgb(255 , 99 , 71 ); opacity: 0.5;">rgba(255 , 99 , 71 , 0.5)</div>
+        <div class="color-value" style="background-color: rgb(255 , 99 , 71 ) ; opacity: 0.5;">hsla(9 , 100% , 64% , 0. 5)</div>
+        <div class="opacity"></div>
+    </main>
+    
+</body>
+</html>
