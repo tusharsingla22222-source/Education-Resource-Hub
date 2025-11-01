@@ -49,12 +49,11 @@ body{
     margin: 30px;
 }
 .navbar ul li a:hover{
-    text-shadow: 10px 10px 20px #38bdf8;
+    text-shadow: 0px 0px 40px #38bdf8;
 } 
 .navbar ul li a {
     text-decoration: none;
     color: white;
-    
 }
 .navbar ul li#list1 {
     height: 50px;
@@ -98,13 +97,13 @@ main{
 .cybersecurity{
     height: 500px;
     width: 485px;
-    background-image: url("images/cyber_security.png");
+    background-image: url("images/html-front-page.png");
     background-size: cover;
     border-radius: 90px;
 }
 .box button{
     height: 50px;
-    width: 200px;
+    width: 250px;
     border: 1px solid transparent;
     text-transform: uppercase;
     font-size: 17px;
@@ -119,21 +118,22 @@ main{
     left: auto;
     right: auto;
     cursor: pointer;
+    box-shadow: 0 0 20px #38bdf8;
 }
 .box button:hover{
-    box-shadow: 0 0 20px #38bdf8;
+    box-shadow: 0 0 30px #38bdf8;
 }
 .html{
     height: 500px;
     width: 485px;
-    background-image: url("images/html-front-page.png");
+    background-image: url("images/css-front-page.png");
     background-size: cover;
     border-radius: 90px;
 }
 .css{
     height: 500px;
     width: 485px;
-    background-image: url("images/css-poster.png");
+    background-image: url("images/Gemini_Generated_Image_4jjlr94jjlr94jjl.png");
     background-size: cover;
     border-radius: 90px;
 }

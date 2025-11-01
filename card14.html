@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Div</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Michroma&family=Pompiere&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Michroma, sans-serif;
+      }
+      body {
+        background-color: black;
+      }
+      #btn {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+      }
+      #btn:hover {
+        background-color: green;
+      }
+      main {
+        display: flex;
+      }
+      .left {
+        height: 850px;
+        width: 400px;
+        border: 2px solid transparent;
+        margin: 20px;
+        overflow: auto;
+        position: fixed;
+        margin-top: 70px;
+      }
+      .right {
+        height: 3500px;
+        width: 1800px;
+        margin-top: 20px;
+        border: 2px solid rgb(80, 78, 78);
+        border-radius: 20px;
+        margin-left: 450px;
+        margin-top: 70px;
+      }
+      .card {
+        height: 50px;
+        width: 100%;
+        border: 2px solid rgb(85, 84, 84);
+        margin-top: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .boiler-plate {
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .about {
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .tags {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      #heading {
+        color: rgb(7, 134, 238);
+        text-shadow: 0 0 15px rgb(7, 134, 238);
+        padding: 10px;
+        padding-left: 330px;
+        text-decoration: underline;
+      }
+      #heading:hover {
+        text-shadow: 0 0 20px rgb(7, 134, 238);
+      }
+      #button {
+        height: 50px;
+        width: 150px;
+        color: white;
+        font-size: 20px;
+        background-color: rgb(7, 134, 238);
+        border: none;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgb(7, 134, 238);
+        cursor: pointer;
+      }
+      #button:hover {
+        box-shadow: 0 0 20px rgb(7, 134, 238);
+      }
+      #para {
+        color: rgb(225, 223, 223);
+        font-size: 17px;
+        margin: 40px;
+        letter-spacing: 2px;
+      }
+      .attribute {
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .heading {
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      #hding {
+        color: white;
+        margin: 30px;
+        letter-spacing: 2px;
+        text-decoration: underline;
+      }
+      .style {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .format{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .comment{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .color{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .link{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .para {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .image{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .list{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .div{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+        background-color: rgb(7, 134, 238);
+        box-shadow: 0 0 15px rgb(7, 134, 238);
+      }
+      .id{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .classes{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .iframes{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .note{
+        background-color: red;
+        color: white;
+        padding: 10px;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+      }
+      .example{
+        height: 170px;
+        width: 900px;
+        background-image: url("images/code-div-ex.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      .example-one{
+        height: 280px;
+        width: 900px;
+        background-image: url("images/code-div-ex1.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      </style>
+</head>
+<body>
+     <a href="courses.html"><button id="btn">⬅</button></a>
+    <main>
+      <div class="left">
+        <a href="card1.html"><div class="card about">HTML</div></a>
+        <a href="card2.html"><div class="card boiler-plate">HTML Boiler-Plate</div></a>
+        <a href="card3.html"><div class="card tags">HTML Elements</div></a>
+        <a href="card4.html"><div class="card attribute">HTML Attributes</div></a>
+        <a href="card5.html"><div class="card heading">HTML Headings</div></a>
+        <a href="card6.html"><div class="card para">HTML Paragraphs</div></a>
+        <a href="card7.html"><div class="card style">HTML Styles</div></a>
+        <a href="card8.html"><div class="card format">HTML Formatting</div></a>
+        <a href="card9.html"><div class="card comment">HTML Comments</div></a>
+        <a href="card10.html"><div class="card color">HTML Colors</div></a>
+        <a href="card11.html"><div class="card link">HTML Links</div></a>
+        <a href="card12.html"><div class="card image">HTML Images</div></a>
+        <a href="card13.html"><div class="card list">HTML Lists</div></a>
+        <a href="card14.html"><div class="card div">HTML Div</div></a>
+        <a href="card15.html"><div class="card id">HTML Id</div></a>
+        <a href="card16.html"><div class="card classes">HTML Classes</div></a>
+        <a href="card17.html"><div class="card iframes">HTML Iframes</div></a>
+        <a href="card18.html"><div class="card"></div></a>
+      </div>
+      <div class="right">
+        <h1 id="heading" style="margin-left: 30px;">HTML Div Element</h1>
+        <div class="buttons">
+            <a href="card13.html"><button id="button">Previous</button></a>
+            <a href="card15.html"><button id="button" style="margin-left: 670px;">Next</button></a>
+        </div>
+        <h2 id="hding">HTML &lt;div&gt; Element</h2>
+        <p id="para">The <span style="color: red;">&lt;div&gt;</span> element is used as a container for other HTML elements.</p>
+        <div class="note">Note - A div element takes up all the available width.</div>
+        <h2 id="hding" style="text-decoration: none;">Example</h2>
+        <div class="example"></div>
+        <h2 id="hding" style="text-decoration: none;">Result</h2>
+        <p style="color: white; margin-left: 30px;">Lorem Ipsum</p>
+        <p style="color: white; background-color: yellowgreen; margin-left: 30px;">I am a div</p>
+        <p style="color: white; margin-left: 30px;">dolor sit amet.</p>
+        <br>
+        <hr>
+        <h2 id="hding" style="text-decoration: none;">Example</h2>
+        <p id="para">The <span style="color: red;">&lt;div&gt;</span>element is often used to group sections of a web page together.</p>
+        <div class="example-one"></div>
+        <h2 id="hding" style="text-decoration: none;">Result</h2>
+        <div class="rslt" style="background-color: yellowgreen;">
+          <h2 id="hding" style="text-decoration: none;">London</h2>
+        <p id="para" style="color: white;">London is the capital city of England.</p>
+        <p id="para" style="color: white;">London has over 9 million inhabitants.</p>
+        </div>
+        <br>
+        <hr>
+        <h2 id="hding">Center align a &lt;div&gt; element</h2>
+          <p id="para">If you have a div element that is not 100% wide, and you want to center-align it, set the CSS <span style="color: red;">style</span> property to <span style="color: red;">auto</span>.</p>
+          <div class="rslt" style="background-color: yellowgreen; margin-left: 300px; margin-right: 300px;">
+          <h2 id="hding" style="text-decoration: none;">London</h2>
+        <p id="para" style="color: white;">London is the capital city of England.</p>
+        <p id="para" style="color: white;">London has over 9 million inhabitants.</p>
+        </div>
+        <br>
+        <hr>
+    </main>
+    
+</body>
+</html>

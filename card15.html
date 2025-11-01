@@ -46,7 +46,7 @@
         margin-top: 70px;
       }
       .right {
-        height: 2500px;
+        height: 1500px;
         width: 1800px;
         margin-top: 20px;
         border: 2px solid rgb(80, 78, 78);
@@ -133,13 +133,6 @@
         letter-spacing: 2px;
         text-decoration: underline;
       }
-      .para {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        font-size: 17px;
-        letter-spacing: 2px;
-      }
       .style {
         color: white;
         text-decoration: none;
@@ -160,8 +153,6 @@
         padding: 10px;
         font-size: 17px;
         letter-spacing: 2px;
-        background-color: rgb(7, 134, 238);
-        box-shadow: 0 0 15px rgb(7, 134, 238);
       }
       .color{
         color: white;
@@ -191,43 +182,6 @@
         font-size: 17px;
         letter-spacing: 2px;
       }
-      .comments{
-        height: 135px;
-        width: 900px;
-        background-image: url("images/code-comment.png");
-        background-size: cover;
-        border-radius: 20px;
-        margin: 30px;
-      }
-      .note{
-        background-color: red;
-        padding: 10px;
-        color: white;
-      }
-      .add-comment{
-        height: 300px;
-        width: 950px;
-        background-image: url("images/code-comment-add.png");
-        background-size: cover;
-        border-radius: 20px;
-        margin: 30px;
-      }
-      .comment-add-one{
-        height: 310px;
-        width: 900px;
-        background-image: url("images/code-comment-add-one.png");
-        background-size: cover;
-        margin: 30px;
-        border-radius: 20px;
-      }
-      .comment-add-two{
-        height: 320px;
-        width: 900px;
-        background-image: url("images/code-comment-add-two.png");
-        background-size: cover;
-        margin: 30px;
-        border-radius: 20px;
-      }
       .div{
         color: white;
         text-decoration: none;
@@ -241,6 +195,8 @@
         padding: 10px;
         font-size: 17px;
         letter-spacing: 2px;
+        background-color: rgb(7, 134, 238);
+        box-shadow: 0 0 15px rgb(7, 134, 238);
       }
       .classes{
         color: white;
@@ -255,6 +211,30 @@
         padding: 10px;
         font-size: 17px;
         letter-spacing: 2px;
+      }
+      .para {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      .note{
+        color: white;
+        background-color: red;
+        padding: 10px;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+      }
+      .tip{
+        color: white;
+        background-color: green;
+        padding: 10px;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+      }
+      .tip a{
+        color: white;
       }
       </style>
 </head>
@@ -282,33 +262,39 @@
         <a href="card18.html"><div class="card"></div></a>
       </div>
       <div class="right">
-        <h1 id="heading">HTML Comments</h1>
+        <h1 id="heading">HTML id Attribute</h1>
         <div class="buttons">
-            <a href="card8.html"><button id="button">Previous</button></a>
-            <a href="card10.html"><button id="button" style="margin-left: 670px;">Next</button></a>
+            <a href="card14.html"><button id="button">Previous</button></a>
+            <a href="card16.html"><button id="button" style="margin-left: 670px;">Next</button></a>
         </div>
-        <p id="para">HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
-        <h2 id="hding">HTML Comment Tag</h2>
-        <div class="comments"></div>
-        <p id="para">Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
-        <div class="note">Note: Comments are not displayed by the browser, but they can help document your HTML source code.</div>
-        <br>
-        <hr>
-        <h2 id="hding">Add Comments</h2>
-        <p id="para">With comments you can place notifications and reminders in your HTML code:</p>
-        <div class="add-comment"></div>
-        <br>
-        <hr>
-        <h2 id="hding">Hide Content</h2>
-        <p id="para">Comments can be used to hide content.
+        <p id="para">
+          The HTML <span style="color: red;">id</span> attribute is used to specify a unique id for an HTML element.
           <br/>
-          This can be helpful if you hide content temporarily:
+          <br>
+          You cannot have more than one element with the same id in an HTML document.
         </p>
-        <div class="comment-add-one"></div>
-        <p id="para">You can hide more than one lines.</p>
-        <div class="comment-add-two"></div>
-        <p id="para">Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors.</p>
+        <br>
+        <hr>
+        <h2 id="hding">The id Attribute</h2>
+        <p id="para">The <span style="color: red;">id</span> attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
+        <br>
+        <br/>
+        The <span style="color: red;">id</span> attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+        <br>
+        <br/>
+        The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.
+        </p>
+        <div class="note">Note: The id name is case sensitive!</div>
+        <br>
+        <br/>
+        <div class="note">Note: The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).</div>
+        <br>
+        <hr>
+        <h2 id="hding">Difference Between Class and ID</h2>
+        <p id="para">A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page.</p>
+        <div class="tip">Tip: You can learn much more about CSS in our <a href="css.html">CSS Tutorial.</a></div>
     </main>
+    
     
 </body>
 </html>
