@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Michroma&family=Pompiere&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: Michroma, sans-serif;
+    }
+    body {
+      background-color: black;
+    }
+    #btn {
+      height: 50px;
+      width: 50px;
+      background-color: blue;
+      border-radius: 50%;
+      border: none;
+      color: white;
+      cursor: pointer;
+      position: fixed;
+    }
+    #btn:hover {
+      background-color: green;
+    }
+    main {
+      display: flex;
+    }
+    .left {
+      height: 850px;
+      width: 400px;
+      border: 2px solid transparent;
+      margin: 20px;
+      overflow: auto;
+      position: fixed;
+      margin-top: 70px;
+    }
+    .right {
+      height: 4000px;
+      width: 1800px;
+      margin-top: 20px;
+      border: 2px solid rgb(80, 78, 78);
+      border-radius: 20px;
+      margin-left: 450px;
+      margin-top: 70px;
+    }
+    .card{
+      height: 50px;
+      width: 100%;
+      border: 2px solid rgb(85, 84, 84);
+      margin-top: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .intro{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+        text-decoration: none;
+    }
+    .right h1{
+        color:rgb(7, 134, 238);
+        text-shadow: 0 0 15px rgb(7, 134, 238);
+        margin: 30px;
+        text-align: center;
+        letter-spacing: 3px;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+    .right h1:hover{
+      text-shadow: 0 0 20px rgb(7, 134, 238);
+    }
+    #para{
+        color: rgb(225, 223, 223);
+        word-spacing: 5px;
+        font-size: 17px;
+        letter-spacing: 1px;
+         margin-left: 30px;
+        margin-right: 30px;
+        text-decoration: none;
+    }
+      #button{
+        height: 50px;
+        width: 150px;
+        color: white;
+        background-color: rgb(7, 134, 238);
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        letter-spacing: 2px;
+        box-shadow: 0 0 15px rgb(7, 134, 238);
+        cursor: pointer;
+      }
+      #button:hover{
+        box-shadow: 0 0 20px rgb(7, 134, 238);
+      }
+      .attribute{
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      #hding{
+        color: white;
+        margin: 30px;
+        font-size: 25px;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+      }
+      .heading{
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 2px ;
+      }
+      .syntax{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .selectors{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+        border: 1px solid rgb(7, 134, 238);
+        background-color: rgb(7, 134, 238);
+        box-shadow: 0 0 15px rgb(7, 134, 238);
+      }
+      .how{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .comment{color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;}
+      .error{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .background{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .border{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;    
+      }
+      .margin{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .padding{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .height{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .box-model{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .outline{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .text{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .fonts{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .icons{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .links{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .lists{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .table{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .display{color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;}
+      .position{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .z-index{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .overflow{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .inline-block{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .align{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .form{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .unit{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .corners{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .color{
+        color: white;
+        padding: 10px;
+        align-items: center;
+        font-size: 17px;
+      }
+      .buttons{
+        display: flex;
+        justify-content: space-between;
+      }
+      .ex{
+        height: 200px;
+        width: 700px;
+        background-image: url("images/css-syntax-im.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      .example{
+        height: 200px;
+        width: 700px;
+        background-image: url("images/exaplem.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      .exa{
+        height: 230px;
+        width: 700px;
+        background-image: url("images/exaplem1.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      .specify{
+        height: 230px;
+        width: 800px;
+        background-image: url("images/specify.png");
+        background-size: cover;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      .more{
+        height: 160px;
+      width: 800px;
+      background-image: url("images/more.png");
+      background-size: cover;
+      margin: 30px;
+      border-radius: 20px;
+          
+    }
+    .moreone{
+      height: 230px;
+      width: 800px;
+      background-image: url("images/moreone.png");
+      background-size: cover;
+      margin: 30px;
+      border-radius: 20px;
+    }
+  </style>
+  <body>
+    <a href="courses.html"><button id="btn">⬅</button></a>
+    <main>
+      <div class="left">
+        <a href="card-css1.html"><div class="card intro">CSS Introduction</div></a>
+        <a href="card-css2.html"><div class="card syntax">CSS Syntax</div></a>
+        <a href="card-css3.html"><div class="card selectors">CSS Selectors</div></a>
+        <a href="card-css4.html"><div class="card how">CSS How to</div></a>
+        <a href="card-css5.html"><div class="card comment">CSS Comments</div></a>
+        <a href="card-css6.html"><div class="card error">CSS Paragraphs</div></a>
+        <a href="card-css7.html"><div class="card background">CSS Background
+        </div></a>
+        <a href="card-css8.html"><div class="card border">CSS Borders</div></a>
+        <a href="card-css9.html"><div class="card margin">CSS Margin</div></a>
+        <a href="card-css10.html"><div class="card padding">CSS Padding</div></a>
+        <a href="card-css11.html"><div class="card height">CSS Height and Width</div></a>
+        <a href="card-css12.html"><div class="card box-model">CSS Box-model</div></a>
+        <a href="card-css3.html"><div class="card outline">CSS Outline</div></a>
+        <a href="card-css14.html"><div class="card text">CSS Text</div></a>
+        <a href="card-css15.html'"><div class="card fonts">CSS Fonts</div></a>
+        <a href="card-css16.html"><div class="card icons">CSS Icons</div></a>
+        <a href="card-css17.html"><div class="card links">CSS Links</div></a>
+        <a href="card-css18.html"><div class="card lists">CSS Lists</div></a>
+        <a href="card-css19.html"><div class="card table">CSS Tables</div></a>
+        <a href="card-css20.html"><div class="card display">CSS Display</div></a>
+        <a href="card-css21.html"><div class="card position">CSS Position</div></a>
+        <a href="card-css22.html"><div class="card z-index">CSS Z-index</div></a>
+        <a href="card-css23.html"><div class="card overflow">CSS Overflow</div></a>
+        <a href="card-css24.html"><div class="card inline-block">CSS inline-block</div></a>
+        <a href="card-css25.html"><div class="card align">CSS Align</div></a>
+        <a href="card-css26.html"><div class="card form">CSS Forms</div></a>
+        <a href="card-css27.html"><div class="card unit">CSS Units</div></a>
+        <a href="card-css28.html"><div class="card corners">CSS Rounded Corners</div></a>
+        <a href="card-css29.html"><div class="card color">CSS Colors</div></a>
+        <a href="card-css30.html"><div class="card"></div></a>
+        <a href="card-css31.html"><div class="card"></div></a>
+      </div>
+      <div class="right">
+        <h1 >CSS Selectors</h1>
+        <div class="buttons">
+          <a href="card-css2.html" style="margin-left: 30px;"><button id="button">Back</button></a>
+        <a href="card-css4.html" style="margin-right: 30px;"><button id="button">Next</button></a>
+        </div>
+        <p id="para" style="margin: 30px;">CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        <p id="para" style="margin: 20px;">We can divide CSS selectors into five categories:</p>
+        <ul>
+          <li><p id="para">1. Simple selectors (select elements based on name, id, class)</p></li>
+          <li><p id="para">2. Combinator selectors (select elements based on a specific relationship between them)</p></li>
+          <li><p id="para">3. Pseudo-class selectors (select elements based on a certain state)</p></li>
+          <li><p id="para">4. Pseudo-elements selectors (select and style a part of an element)</p></li>
+          <li><p id="para">5. Attribute selectors (select elements based on an attribute or attribute value)</p></li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <h3 id="hding">The CSS element Selector</h3>
+        <p id="para">The <span style="color: red;">element</span> selector selects HTML elements based on the element name.</p>
+        <h3 id="hding">Example</h3>
+        <div class="ex"></div>
+        <br>
+        <hr>
+        <br>
+        <h3 id="hding">The CSS id Selector</h3>
+        <p id="para">
+          The <span style="color: red;">id</span> selector uses the id attribute of an HTML element to select a specific element.
+          <br>
+          <br/>
+          The id of an element is unique within a page, so the id selector is used to select one unique element!
+          <br>
+          <br/>
+          To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+        </p>
+        <h3 id="hding">Example</h3>
+        <p id="para">The CSS rule below will be applied to the HTML element with id="para1": </p>
+        <div class="example"></div>
+        <br>
+        <hr>
+        <br>
+        <h3 id="hding">The CSS class Selector</h3>
+        <p id="para">
+          The class selector selects HTML elements with a specific class attribute.
+          <br>
+          <br/>
+          To select elements with a specific class, write a period (.) character, followed by the class name.
+        </p>
+        <h3 id="hding">Example</h3>
+        <p id="para">In this example all HTML elements with class="center" will be red and center-aligned: </p>
+        <div class="exa"></div>
+        <p id="para">You can also specify that only specific HTML elements should be affected by a class.</p>
+        <div class="specify"></div>
+        <p id="para">HTML elements can also refer to more than one class.</p>
+         <h3 id="hding">Example</h3>
+        <p id="para">In this example the &lt;p&gt; element will be styled according to class="center" and to class="large": </p>
+        <div class="more"></div>
+        <br>
+        <hr>
+        <br>
+        <h3 id="hding">The CSS Universal Selector</h3>
+        <p id="para">The <span style="color: red;">universal selector (*)</span> selects all HTML elements on the page.</p>
+        <h3 id="hding">Example</h3>
+        <p id="para">The CSS rule below will affect every HTML element on the page: </p>
+        <div class="moreone"></div>
+    </main>
+  </body>
+</html>
